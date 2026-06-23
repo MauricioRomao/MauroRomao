@@ -2,9 +2,7 @@ import Image from "next/image";
 import MauroImage from "../../Images/mauro.jpg"
 import {
     FaFacebookF,
-    FaInstagram,
     FaLinkedinIn,
-    FaXTwitter,
     FaEnvelope
 
 } from "react-icons/fa6";
@@ -14,7 +12,7 @@ import { FaNodeJs, FaReact } from "react-icons/fa";
 export default function Hero() {
     return (
         // Fundo claro e textos escuros padrão usando as classes do Tailwind
-        <section className="container mx-auto px-4 md:px-8 py-12 lg:py-20 min-h-[calc(100vh-80px)] flex items-center bg-[#f5f6fb] text-slate-800">
+        <section className="container mx-auto px-4 md:px-8  py-12 lg:py-20 min-h-[calc(100vh-80px)] flex items-center bg-[#f5f6fb] text-slate-800">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full">
 
                 {/* Lado Esquerdo - Conteúdo */}
@@ -39,8 +37,8 @@ export default function Hero() {
                     </p>
 
                     <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
-                        <button className="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 active:scale-95 text-white px-8 py-3.5 rounded-full font-semibold transition-all shadow-md">
-                            About Me
+                        <button className="w-full cursor-pointer sm:w-auto bg-slate-900 hover:bg-slate-800 active:scale-95 text-white px-8 py-3.5 rounded-full font-semibold transition-all shadow-md">
+                            Bora conversar !
                         </button>
 
                         <div className="flex gap-5 text-slate-400">
@@ -88,8 +86,8 @@ export default function Hero() {
                     </div>
 
                 </div>
-
             </div>
+                    
         </section>
     );
 }

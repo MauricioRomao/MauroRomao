@@ -2,8 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 import MauroLogo from "../../Images/logo.png";
 
+
+
 // Importação dos ícones para o menu inferior móvel
-import { FaHome, FaUser, FaBriefcase, FaEnvelope } from "react-icons/fa";
+import { FaHome, FaCode, FaBriefcase, FaEnvelope } from "react-icons/fa";
 import { FaBookOpen, FaGear } from "react-icons/fa6";
 
 export default function Header() {
@@ -29,7 +31,7 @@ export default function Header() {
                     {/* Menu Desktop - Escondido em mobile (md:flex) */}
                     <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700">
                         <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
-                        <Link href="#sobre" className="hover:text-blue-600 transition-colors">Sobre</Link>
+                        <Link href="#sobre" className="hover:text-blue-600 transition-colors">Projetos</Link>
                         <Link href="#portfolio" className="hover:text-blue-600 transition-colors">Portfolio</Link>
                         <Link href="#serviços" className="hover:text-blue-600 transition-colors">Serviços</Link>
                         <Link href="#blog" className="hover:text-blue-600 transition-colors">Blog</Link>
@@ -59,8 +61,8 @@ export default function Header() {
                     </Link>
 
                     <Link href="#sobre" className="flex flex-col items-center justify-center gap-1 text-slate-600 hover:text-blue-600 active:scale-95 transition-all w-14 py-1">
-                        <FaUser size={18} />
-                        <span className="text-[10px] font-medium">Sobre</span>
+                        <FaCode size={18} />
+                        <span className="text-[10px] font-medium">Projetos</span>
                     </Link>
 
                     <Link href="#portfolio" className="flex flex-col items-center justify-center gap-1 text-slate-600 hover:text-blue-600 active:scale-95 transition-all w-14 py-1">

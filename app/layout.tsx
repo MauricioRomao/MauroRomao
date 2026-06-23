@@ -1,6 +1,5 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import icon from "../Images/logo.png"
 
 
 const poppins = Poppins({
