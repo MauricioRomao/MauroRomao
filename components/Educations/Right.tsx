@@ -33,7 +33,8 @@ const techIcons: Record<string, JSX.Element> = {
   MySQL: <SiMysql className="text-4xl text-white" />,
   Angular : <FaAngular className="text-4xl text-red-500" />,
   Vue : <FaVuejs className="text-4xl text-green-500" />,
-  Post : <SiPostgresql className="text-4xl text-blue-500" />
+  Post : <SiPostgresql className="text-4xl text-blue-500" />,
+  Native: <FaReact className="text-4xl text-blue-400" />
 };
 const Experiencies = SetData()
 export default function Right() {

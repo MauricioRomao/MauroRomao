@@ -27,7 +27,7 @@ const Dados : IExperience[] = [
     "funcao": "Frontend Developer",
     "ano": "2024",
     "descricao": "A Spout é um App inovador que conecta consumidores a fornecedores de transporte de água (Totalmente desenvolvido com React Native).",
-    "tecnologias": ["React"]
+    "tecnologias": ["Native", "TypeScript"]
   },
   {
     "empresa": "Empresa",
@@ -44,7 +44,7 @@ const Dados : IExperience[] = [
     "funcao": "FullStack Developer",
     "ano": "2026",
     "descricao": "Software Developer Full Stack",
-    "tecnologias": ["Node.js", "MongoDB", "TypeScript","Next.js","MySQL", "Angular", "Vue","Post"]
+    "tecnologias": ["Node.js", "MongoDB", "TypeScript","Next.js","MySQL", "Angular", "Vue","Post", "Native"]
   },
 
  
