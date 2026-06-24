@@ -37,11 +37,15 @@ export default function Hero() {
                     </p>
 
                     <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
-                        <button className="w-full cursor-pointer sm:w-auto bg-slate-900 hover:bg-slate-800 active:scale-95 text-white px-8 py-3.5 rounded-full font-semibold transition-all shadow-md">
+                        <a 
+                        className="w-full cursor-pointer sm:w-auto bg-slate-900 hover:bg-slate-800 active:scale-95 text-white px-8 py-3.5 rounded-full font-semibold transition-all shadow-md"
+                        href="https://api.whatsapp.com/send?phone=+244921401948&text=Tudo bem, Mauro?" target="_blank" >
+                       
                             Bora conversar !
-                        </button>
+                        </a>
 
-                        <div className="flex gap-5 text-slate-400">
+                       
+                        <div className="flex gap-5 text-slate-800">
                             <a  href="https://web.facebook.com/mauricioromao.antonio/" target="_blank" className="hover:text-blue-600 transition-colors"><FaFacebookF size={18} /></a>
                             <a href="https://www.linkedin.com/in/maurorom%C3%A3o-bb4377257/" target="_blank" className="hover:text-blue-700 transition-colors"><FaLinkedinIn size={18} /></a>
                             <a href="mailto:devmauroromao@gmail.com" target="_blank" className="hover:text-pink-600 transition-colors"><FaEnvelope size={18} /></a>

@@ -37,7 +37,7 @@ export default function Educations() {
             </p>
 
             <p className="text-slate-400 text-sm sm:text-base leading-relaxed mt-3">
-              Estudante do 2 no curso de Ciências da Computação
+              Estudante do 2º no curso de Ciências da Computação
             </p>
 
             {/* indicador visual */}

@@ -5,20 +5,9 @@ import "./globals.css";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+  preload: false, // ajuda em redes problemáticas
 });
-
-export const metadata = {
-  icons: {
-    icon: [
-      {
-        url: '/logo.png', // Caminho direto a partir da pasta public (sem chaves e sem import)
-        sizes: '192x192',       
-        type: 'image/png',
-      },
-    ],
-  },
-};
-
 export default function RootLayout({
   children,
 }: {
