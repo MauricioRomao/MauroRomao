@@ -21,7 +21,7 @@ import {
   SiPostgresql
 } from "react-icons/si";
 
-const techIcons: Record<string, JSX.Element> = {
+const techIcons: Record<string, React.ReactNode> = {
   HTML5: <FaHtml5 className="text-4xl text-orange-500" />,
   CSS3: <FaCss3Alt className="text-4xl text-blue-500" />,
   JavaScript: <FaJs className="text-4xl text-yellow-500" />,
