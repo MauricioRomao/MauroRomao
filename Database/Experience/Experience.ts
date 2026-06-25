@@ -1,8 +1,8 @@
-import { IExperience } from "@/app/Types/Experience/Experience";
+import { IExperience } from "@/Types/Experience/Experience";
 
 
 
-const Dados : IExperience[] = [
+export const Dados : IExperience[] = [
   
  
   {
@@ -54,9 +54,3 @@ const Dados : IExperience[] = [
 ] 
 
 
-export const SetData = ()=>{
-
-     return Dados
-
-
-}

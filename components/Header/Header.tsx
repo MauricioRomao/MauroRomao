@@ -20,7 +20,7 @@ export default function Header() {
                         <div className="w-8 h-8 relative">
                             <Image
                                 src={MauroLogo}
-                                alt="Logo Mauro Romão"
+                                alt="Mauro Romão"
                                 fill
                                 className="object-contain w-60"
                                 priority
@@ -31,7 +31,7 @@ export default function Header() {
                     {/* Menu Desktop - Escondido em mobile (md:flex) */}
                     <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700">
                         <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
-                        <Link href="#sobre" className="hover:text-blue-600 transition-colors">Projetos</Link>
+                        <Link href="/projetos" className="hover:text-blue-600 transition-colors">Projetos</Link>
                         <Link href="#portfolio" className="hover:text-blue-600 transition-colors">Portfolio</Link>
                         <Link href="#serviços" className="hover:text-blue-600 transition-colors">Serviços</Link>
                         <Link href="#blog" className="hover:text-blue-600 transition-colors">Blog</Link>
@@ -51,7 +51,7 @@ export default function Header() {
                 </div>
             </header>
 
-            {/* Menu Inferior Fixo - Apenas visível em Mobile (md:hidden) */}
+            {/* Menu Inferior Fixo) */}
             <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-md border-t border-slate-200 z-50 px-2 py-2 shadow-[0_-4px_12px_rgba(0,0,0,0.05)]">
                 <div className="flex justify-around items-center max-w-md mx-auto">
                     
@@ -60,7 +60,7 @@ export default function Header() {
                         <span className="text-[10px] font-medium">Home</span>
                     </Link>
 
-                    <Link href="#sobre" className="flex flex-col items-center justify-center gap-1 text-slate-600 hover:text-blue-600 active:scale-95 transition-all w-14 py-1">
+                    <Link href="/projetos" className="flex flex-col items-center justify-center gap-1 text-slate-600 hover:text-blue-600 active:scale-95 transition-all w-14 py-1">
                         <FaCode size={18} />
                         <span className="text-[10px] font-medium">Projetos</span>
                     </Link>

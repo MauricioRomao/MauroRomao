@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SetData } from "@/Database/Experience/Experience";
+import { Dados } from "@/Database/Experience/Experience";
 
 import {
   FaHtml5,
@@ -31,12 +31,12 @@ const techIcons: Record<string, React.ReactNode> = {
   TypeScript: <SiTypescript className="text-4xl text-blue-500" />,
   "Next.js": <SiNextdotjs className="text-4xl text-white" />,
   MySQL: <SiMysql className="text-4xl text-white" />,
-  Angular : <FaAngular className="text-4xl text-red-500" />,
-  Vue : <FaVuejs className="text-4xl text-green-500" />,
-  Post : <SiPostgresql className="text-4xl text-blue-500" />,
+  Angular: <FaAngular className="text-4xl text-red-500" />,
+  Vue: <FaVuejs className="text-4xl text-green-500" />,
+  Post: <SiPostgresql className="text-4xl text-blue-500" />,
   Native: <FaReact className="text-4xl text-blue-400" />
 };
-const Experiencies = SetData()
+const Experiencies = Dados
 export default function Right() {
   return (
     <div className="flex flex-col gap-12 sm:gap-16 lg:gap-24 py-6 sm:py-10 lg:py-12">
@@ -79,7 +79,7 @@ export default function Right() {
             </p>
 
             <div className="flex gap-2 mt-4 flex-wrap">
-              {item.tecnologias.map((tech) => (
+              {item.tecnologias.map((tech: string) => (
                 <div key={tech}>
                   {techIcons[tech] ?? (
                     <span className="text-slate-400 text-sm">{tech}</span>
