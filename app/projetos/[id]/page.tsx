@@ -39,7 +39,7 @@ export default async function ProjetoDetalhe({ params }: ProjectPageProps) {
 
       {/* Conteúdo Principal do Detalhe */}
       <main className="container mx-auto py-10 px-4 md:px-6 max-w-5xl">
-        <article className="bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden p-6 md:p-10">
+        <article className="bg-slate-50 rounded-3xl  shadow-sm overflow-hidden p-6 md:p-10">
           
           {/* Título e Cabeçalho */}
           <header className="mb-6 md:mb-8 text-left">
@@ -73,7 +73,7 @@ export default async function ProjetoDetalhe({ params }: ProjectPageProps) {
                 {project.description}
               </p>
               <p className="text-slate-500 text-sm md:text-base leading-relaxed">
-                Este projeto foi estruturado com foco em performance, acessibilidade e design responsivo, utilizando as melhores práticas do ecossistema Next.js e Tailwind CSS para garantir uma experiência fluida.
+                    {project.fullDescription}
               </p>
             </div>
 

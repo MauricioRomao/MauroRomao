@@ -4,5 +4,6 @@ export interface Project {
   description: string;
   imageSrc: any; 
   imageAlt: string;
-  projectUrl: string;
+  projectUrl: string,
+  fullDescription?:string
 }

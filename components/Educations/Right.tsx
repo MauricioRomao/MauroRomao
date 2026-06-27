@@ -39,7 +39,7 @@ const techIcons: Record<string, React.ReactNode> = {
 const Experiencies = Dados
 export default function Right() {
   return (
-    <div className="flex flex-col gap-12 sm:gap-16 lg:gap-24 py-6 sm:py-10 lg:py-12">
+    <div className="flex flex-col gap-12 sm:gap-16 lg:gap-24 overflow-clip py-6 sm:py-10 lg:py-12">
       {Experiencies.map((item, index) => (
         <motion.div
           key={`${item.nomedaempresa}-${index}`}
