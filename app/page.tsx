@@ -2,10 +2,11 @@ import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import Educations from "@/components/Educations/Educations";
 
-export default function Home() {
+export default  async function Home() {
+
   return (
      <>
-       {/* nãao tape o conteúdo em mobile */}
+      
        <div className="min-h-screen pb-20 md:pb-0">
           <Header />
           <main>

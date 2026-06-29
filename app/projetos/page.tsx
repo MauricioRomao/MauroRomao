@@ -4,7 +4,9 @@ import { FaArrowLeft } from "react-icons/fa";
 import Slide from "@/components/ui/Slide/Slide";
 import ListaProjetos from "@/components/Projetos/Projetos";
 
-export default function Teste() {
+export default async function Page() {
+
+
     console.log("PAGE TESTE RENDERIZOU");
 
     return (
@@ -24,10 +26,10 @@ export default function Teste() {
                 </div>
             </header>
 
-            <section className="p-10">
+            <section className="p-5">
                 <Slide />
             </section>
-            <section className="p-10 pt-52">
+            <section className="p-6 pt-50">
                 <ListaProjetos />
             </section>
 

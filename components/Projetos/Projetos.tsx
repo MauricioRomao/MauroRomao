@@ -6,19 +6,19 @@ import { projectsData } from "@/Database/Projetos/Projetos";
 export default function ListaProjetos() {
   return (
     <section className="w-full py-12 px-4 max-w-7xl mx-auto">
-      {/* Título da Seção */}
+
       <h2 className="text-3xl font-black text-slate-900 mb-8 tracking-tight text-center md:text-left">
         Meus Projetos
       </h2>
 
-      {/* Grelha: 1 coluna no mobile, 2 no tablet, exatamente 3 colunas no desktop */}
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
         {projectsData.map((project) => (
           <article 
             key={project.id} 
             className="flex flex-col bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
           >
-            {/* Bloco da Imagem */}
+        
             <div className="relative aspect-video w-full bg-slate-100 overflow-hidden">
               <Image
                 src={project.imageSrc}
@@ -30,7 +30,7 @@ export default function ListaProjetos() {
               />
             </div>
 
-            {/* Conteúdo de Texto */}
+
             <div className="flex flex-col flex-1 p-5 md:p-6 text-left">
               <h3 className="text-xl font-bold text-slate-900 tracking-tight mb-2">
                 {project.title}
@@ -40,7 +40,7 @@ export default function ListaProjetos() {
                 {project.description}
               </p>
 
-              {/* Botão / Link de Ação */}
+    
               <div className="mt-auto">
                 <Link
                   href={`/projetos/${project.id}`}

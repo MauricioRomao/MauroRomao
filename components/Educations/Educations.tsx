@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import Right from "./Right";
 export default function Educations() {
   return (
-    <div className="min-h-[200vh] bg-slate-950 text-white selection:bg-purple-500/30 ">
+    <div className="min-h-[200vh] bg-slate-950 text-white selection:bg-purple-500/30 " id="works">
 
       <section className="max-w-6xl mx-auto px-3 sm:px-6 lg:px-8 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 relative">
 
         {/* ================= LEFT (STICKY CARD) ================= */}
-        <div className="lg:sticky lg:top-24 h-fit self-start">
+        <div className="lg:sticky lg:top-24 h-fit self-start" >
 
           <motion.div
             initial={{ scale: 0.95, opacity: 0 }}
@@ -40,7 +40,6 @@ export default function Educations() {
               Estudante do 2º no curso de Ciências da Computação
             </p>
 
-            {/* indicador visual */}
           </motion.div>
         </div>
 

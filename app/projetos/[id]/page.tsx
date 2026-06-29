@@ -13,13 +13,16 @@ interface ProjectPageProps {
 
 export default async function ProjetoDetalhe({ params }: ProjectPageProps) {
 
+
   const { id } = await params;
-
-
+  
+  
+  
   const project = projectsData.find((p) => p.id === id);
   if (!project) {
     notFound();
   }
+  const href =  `https://api.whatsapp.com/send?phone=+244921401948&text=Gostaria de Conversar sobre o ${project.title}, Mauro?`;
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased">
@@ -85,8 +88,7 @@ export default async function ProjetoDetalhe({ params }: ProjectPageProps) {
                 </h3>
                 <ul className="space-y-2 text-sm font-medium text-slate-700">
                   <li className="flex justify-between py-1 border-b border-slate-200/60">
-                    <span className="text-slate-500">ID do Projeto:</span>
-                    <span className="font-mono text-slate-900">{project.id}</span>
+                   
                   </li>
                   <li className="flex justify-between py-1 border-b border-slate-200/60">
                     <span className="text-slate-500">Status:</span>
@@ -97,12 +99,12 @@ export default async function ProjetoDetalhe({ params }: ProjectPageProps) {
 
               {/* Link para o site real ou repositório */}
               <a
-                href={project.projectUrl}
+                href={href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 rounded-xl bg-slate-900 text-white text-sm font-bold hover:text-blue-900 font-semibold hover:bg-slate-300 active:scale-[0.99] transition-all duration-200 shadow-sm hover:shadow"
               >
-                Aceder Projeto Live
+                 Conversar Sobre o projecto
 
                 <FaExternalLinkAlt className="text-xs" />
               </a>
