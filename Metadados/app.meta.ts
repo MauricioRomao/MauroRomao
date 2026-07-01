@@ -4,8 +4,6 @@ const baseUrl = process.env.NODE_ENV === "development"
     ? "http://localhost:3000" 
     : "https://vercel.app";
 
-
-
 export const appMeta: Metadata = {
   title: {
     default: "Mauro Romão | Desenvolvedor de Software",
@@ -25,6 +23,11 @@ export const appMeta: Metadata = {
   creator: "Mauro Romão",
   metadataBase: new URL(baseUrl),
   
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png", 
+  },
   
   robots: {
     index: true,
@@ -38,30 +41,27 @@ export const appMeta: Metadata = {
     },
   },
 
-  
   openGraph: {
     title: "Mauro Romão | Desenvolvedor de Software",
     description: "Explore o portfólio de Mauro Romão. Projetos modernos de desenvolvimento de software e soluções web.",
     url: baseUrl,
     siteName: "Mauro Romão Portfólio",
-    locale: "pt_AO", //
+    locale: "pt_AO", 
     type: "profile",
     images: [
       {
-        url: "/logo.png", 
+        url: "/favicon.png", 
         width: 1200,
         height: 630,
-        alt: "Mauro Romão - Desenvolvedor de Software Portfolio",
+        alt: "Mauro Romão - Desenvolvedor",
       },
     ],
   },
-
 
   twitter: {
     card: "summary_large_image",
     title: "Mauro Romão | Desenvolvedor de Software",
     description: "Portfólio profissional de desenvolvimento de software.",
-    images: ["/logo.png"],
+    images: ["/favicon.png"],
   },
 };
-

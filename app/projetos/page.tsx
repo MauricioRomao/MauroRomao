@@ -4,10 +4,10 @@ import { FaArrowLeft } from "react-icons/fa";
 import Slide from "@/components/ui/Slide/Slide";
 import ListaProjetos from "@/components/Projetos/Projetos";
 
+
 export default async function Page() {
 
 
-    console.log("PAGE TESTE RENDERIZOU");
 
     return (
         <div className="min-h-screen pb-20 md:pb-0 bg-slate-50 text-slate-900 selection:bg-purple-500/30">

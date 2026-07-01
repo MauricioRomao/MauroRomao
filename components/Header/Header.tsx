@@ -4,7 +4,6 @@ import MauroLogo from "../../Images/logo.png";
 
 
 
-// Importação dos ícones para o menu inferior móvel
 import { FaHome, FaCode, FaBriefcase} from "react-icons/fa";
 import { FaBookOpen, FaGear } from "react-icons/fa6";
 
@@ -33,7 +32,7 @@ export default function Header() {
                         <Link href="#works" className="hover:text-blue-600 transition-colors">Works</Link>
                         <Link href="/projetos" className="hover:text-blue-600 transition-colors">Projetos</Link>
                         <Link href="/servicos" className="hover:text-blue-600 transition-colors">Serviços</Link>
-                        <Link href="#blog" className="hover:text-blue-600 transition-colors">Blog</Link>
+                        <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
                     </nav>
 
                     {/* Botão de Download CV */}
@@ -72,7 +71,7 @@ export default function Header() {
                         <span className="text-[10px] font-medium">Serviços</span>
                     </Link>
 
-                    <Link href="#blog" className="flex flex-col items-center justify-center gap-1 text-slate-600 hover:text-blue-600 active:scale-95 transition-all w-14 py-1">
+                    <Link href="/blog" className="flex flex-col items-center justify-center gap-1 text-slate-600 hover:text-blue-600 active:scale-95 transition-all w-14 py-1">
                         <FaBookOpen size={18} />
                         <span className="text-[10px] font-medium">Blog</span>
                     </Link>

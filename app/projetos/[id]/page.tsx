@@ -3,14 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaArrowLeft, FaExternalLinkAlt } from "react-icons/fa";
 import { projectsData } from "@/Database/Projetos/Projetos";
-
-import { getProjectMetadata } from "@/Metadados/projetos.meta";
+import {generateMetadata} from "@/Metadados/projetos.meta"
 
 interface ProjectPageProps {
   params: Promise<{ id: string }>;
 }
 
-export const generateMetadata = getProjectMetadata;
+export { generateMetadata };
+
 
 export default async function ProjetoDetalhe({ params }: ProjectPageProps) {
   const { id } = await params;
@@ -20,7 +20,7 @@ export default async function ProjetoDetalhe({ params }: ProjectPageProps) {
     notFound();
   }
   
-  const href = `https://whatsapp.com de Conversar sobre o ${project.title}, Mauro?`;
+  const href = `https://api.whatsapp.com/send?phone=+244921401948&text=Gostaria de Falar sobre ${project.title}, Mauro !`;
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased">

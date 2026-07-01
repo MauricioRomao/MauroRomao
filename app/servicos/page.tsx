@@ -5,6 +5,7 @@ import { FaArrowLeft } from "react-icons/fa";
 
 import LogoImagem from "@/Images/logo.png"
 export default function ServicesPage() {
+  
     return (
 
 
@@ -70,9 +71,9 @@ export default function ServicesPage() {
             <p className="text-gray-500 text-sm leading-relaxed mb-6">
               {service.description}
             </p>
-            
             <Link 
-              href={`/services/${service.id}`}
+              href={`https://api.whatsapp.com/send?phone=+244921401948&text=Oi, Mauro  ! Gostaria de saber mais sobre ${service.title}`}
+              target='_blank'
               className={`${service.iconColor} text-xs font-semibold uppercase tracking-wider hover:underline inline-flex items-center gap-1 mt-auto`}
             >
               Saber Mais <span className="text-sm">→</span>

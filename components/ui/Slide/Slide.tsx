@@ -30,7 +30,6 @@ export default function Slide() {
 
   return (
     <div className="w-full h-30 space-y-4 font-semibold">
-      {/* Container do Carrossel */}
       <div className="w-full overflow-hidden cursor-grab active:cursor-grabbing font-semibold"  ref={emblaRef}>
         <div className="flex select-none">
           {slideData.map((slide) => (
@@ -52,13 +51,7 @@ export default function Slide() {
                       {slide.description}
                     </p>
                     
-                    <button 
-                      type="button"
-                      onClick={() => alert(`Ação para: ${slide.id}`)}
-                      className="mt-4 sm:mt-6 md:mt-8 w-fit font-semibold rounded-full bg-[#FBCAD3] px-5 sm:px-8 py-2 sm:py-3.5 text-xs sm:text-sm font-black text-gray-950 transition-all hover:bg-[#f9b2bf] hover:shadow-md active:scale-95 cursor-pointer"
-                    >
-                      {slide.buttonText}
-                    </button>
+                  
                   </div>
 
                   {/* Lado Direito - Imagem */}

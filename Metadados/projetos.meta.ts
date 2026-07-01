@@ -1,5 +1,3 @@
-
-
 import { Metadata } from "next";
 import { projectsData } from "@/Database/Projetos/Projetos";
 
@@ -7,7 +5,7 @@ interface ProjectPageProps {
   params: Promise<{ id: string }>;
 }
 
-export async function getProjectMetadata({ params }: ProjectPageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata> {
   const { id } = await params;
   const project = projectsData.find((p) => p.id === id);
 
@@ -30,11 +28,38 @@ export async function getProjectMetadata({ params }: ProjectPageProps): Promise<
   return {
     title: `${project.title} | Mauro Romão`,
     description: project.description,
+    keywords: [
+      project.title,
+      "Mauro Romão",
+      "Desenvolvedor de software Angolano",
+      "Portfólio Mauro Romão",
+      "Projetos Web"
+    ],
+    authors: [{ name: "Mauro Romão", url: baseUrl }],
+    creator: "Mauro Romão",
+    metadataBase: new URL(baseUrl),
+    icons: {
+      icon: "/favicon.png",
+      shortcut: "/favicon.png",
+      apple: "/favicon.png",
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
     openGraph: {
-      title: project.title,
+      title: `${project.title} | Mauro Romão`,
       description: project.description,
       url: `${baseUrl}/projetos/${id}`,
       siteName: "Mauro Romão Portfólio",
+      locale: "pt_AO",
       type: "website",
       images: [
         {
@@ -47,7 +72,7 @@ export async function getProjectMetadata({ params }: ProjectPageProps): Promise<
     },
     twitter: {
       card: "summary_large_image",
-      title: project.title,
+      title: `${project.title} | Mauro Romão`,
       description: project.description,
       images: [absoluteImageUrl],
     },
